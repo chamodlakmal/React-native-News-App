@@ -1,9 +1,9 @@
 import React from 'react';
-import {Home} from './screens';
+import {ArticleCard} from './components';
 
 const App = () => {
   return (
-    <Home/>
+    <ArticleCard/>
   )
 }
 

@@ -6,8 +6,8 @@ const styles = StyleSheet.create({
         width: '100%',
         flex: 1,
         backgroundColor: 'yellow',
-        justifyContent:'center',
-        alignItems:'center',
+        justifyContent: 'center',
+        alignItems: 'center',
     }
 });
 
