@@ -22,17 +22,18 @@ const styles = StyleSheet.create({
     },
     bottomTextContainer: {
         flexDirection: 'row',
+        justifyContent: 'space-between'
     }
 })
 
-export default function ArticleCard() {
+export default function ArticleCard({ imageUrl, title, source, timeago }) {
     return (
         <View style={styles.container}>
-            <Image source={{ uri: 'https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg' }} style={styles.image} />
-            <Text style={styles.title}>Article</Text>
+            <Image source={{ uri: imageUrl }} style={styles.image} />
+            <Text style={styles.title}>{title}</Text>
             <View style={styles.bottomTextContainer}>
-                <Text >New York Time </Text>
-                <Text >4 hours ago</Text>
+                <Text >{source} </Text>
+                <Text >{timeago}</Text>
             </View>
         </View>
     )
