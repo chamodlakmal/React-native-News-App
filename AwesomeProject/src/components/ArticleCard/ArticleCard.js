@@ -1,12 +1,14 @@
 import React from 'react'
 import { View, Text, StyleSheet, Image } from 'react-native';
 import COLORS from '../../utils/constants';
-
+import moment from 'moment';
 
 const styles = StyleSheet.create({
     container: {
         width: '95%',
         height: 200,
+        marginTop:10,
+        marginLeft:10
     },
     image: {
         width: '100%',
@@ -33,8 +35,8 @@ export default function ArticleCard({ imageUrl, title, source, timeago }) {
             <Text style={styles.title}>{title}</Text>
             <View style={styles.bottomTextContainer}>
                 <Text >{source} </Text>
-                <Text >{timeago}</Text>
+                <Text >{moment(timeago).fromNow() }</Text>
             </View>
         </View>
     )
-}
+} 
