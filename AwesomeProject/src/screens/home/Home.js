@@ -18,3 +18,8 @@ export default function Home() {
         </View>
     )
 }
+
+const state={
+    user:{},
+    reports:{}
+}
