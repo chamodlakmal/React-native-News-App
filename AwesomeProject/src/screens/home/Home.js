@@ -19,7 +19,7 @@ export default function Home() {
     )
 }
 
-const state={
-    user:{},
-    reports:{}
+const state = {
+    user: {},
+    reports: {}
 }
